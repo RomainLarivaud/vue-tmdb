@@ -1,0 +1,51 @@
+.header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: sticky;
+    top:0;
+    left: 0;
+    background-color: rgba(23, 24, 32,.95);
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+#logo-tmdb{
+    width: 200px;
+}
+
+#search-movie{
+    margin-left: 50px;
+    height: 25px;
+    width: 500px;
+    border-radius: 50px;
+    padding-left: 15px;
+    border: none;
+}
+
+#menuHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 100%;
+    color: white;
+}
+
+.menuCategory{
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .1s;
+}
+
+.menuCategory:hover{
+    transition: .1s;
+    text-shadow: 1px 1px #3A8E84, 2px 2px #3A8E84;
+}

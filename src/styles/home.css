@@ -1,0 +1,320 @@
+
+/* Partie sur les films les plus populaires */
+
+.part-most-popular{
+    color: white;
+    max-width: 1300px;
+    display: flex;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 500px;
+    margin-bottom: 100px;
+}
+
+.part-most-popular h1{
+    font-size: 92px;
+    color: #171820;
+    -webkit-text-stroke: 2px white;
+    font-weight: 900;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+/* Other Most Popular case */
+
+.others-most-popular{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 45%;
+    justify-items: end;
+    align-items: center;
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+.others-most-popular .popular-case{
+    width: 150px;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.others-most-popular .popular-case:hover{
+    background-color: #fff;
+    color: #171820;
+    box-shadow: 5px 5px #3A8E84;
+    transition: .1s;
+    transform: translate(-4px,-4px);
+}
+
+.others-most-popular .popular-case:hover .star-border{
+    background-color: #171820;
+}
+
+.others-most-popular .popular-case:hover .star-border .star{
+    background-color: #fff;
+}
+
+.others-most-popular .popular-case:hover .star-border .star-fill{
+    background-color: #171820;
+}
+
+
+.others-most-popular img{
+    width: 100%;
+    border-radius: 5px;
+    max-height: 180px;
+    min-height: 180px;
+    object-fit: cover;
+}
+
+.star-container{
+    width: 100px;
+    height: fit-content;
+    margin-bottom: 0;
+    margin-top: 5px;
+    display: flex;
+    
+}
+
+.star-container .star-border{
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+}
+
+.star-container .star-border:first-of-type{
+    margin-left: 0;
+}
+
+.star-container .star{
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    width: 10px;
+    height: 10px;
+    transform: translate(-52%, -50%);
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #171820;
+}
+
+.star-container .star .star-fill{
+    background-color: #fff;
+    height: 100%;
+    width: 0%;
+}
+
+.others-most-popular h2{
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.others-most-popular .number-popular{
+    font-size: 18px;
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    font-weight: 900;
+    background-color: #fff;
+    color: #171820;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 4px;
+    padding: 0 7px;
+    border-top: 2px solid white;
+    text-align: center;
+}
+
+
+
+/* First Most Popular case */
+
+.first-most-popular-case{
+    position: relative;
+    width: 52.5%;
+    height: 475px;
+    margin-right: 100px;
+}
+
+.first-most-popular-case .info-popular{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 375px;
+}
+
+.first-most-popular-case .info-popular h2{
+    margin-bottom: 10px;
+    text-shadow: 1px 1px #3A8E84, 2px 2px #3A8E84;
+    text-transform: uppercase;
+}
+
+.first-most-popular-case .star-container{
+    margin-bottom: 15px;
+    width: 200px;
+    height: 20px;
+}
+
+.first-most-popular-case .star-container .star-border{
+    width: 28px;
+    height: 28px;
+    margin-left: 5px;
+}
+
+.first-most-popular-case .star-container .star-border:first-of-type{
+    margin-left: 0;
+}
+
+.first-most-popular-case .star-container .star{
+    width: 20px;
+    height: 20px;
+    transform: translate(-51%, -50.5%);
+}
+
+.first-most-popular-case .info-popular .text-popular{
+    font-size: 15px;
+    max-height: 100%;
+
+}
+
+.first-most-popular-case .square-points{
+    width: 125px;
+    position: absolute;
+    right: -50px;
+    top: 50px;
+    z-index: 1;
+}
+
+.first-most-popular-case img:nth-of-type(2) {
+    width: 250px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 2px solid #3A8E84;
+    padding: 10px;
+}
+
+.first-most-popular-case .number-popular{
+    position: absolute;
+    right: -30px;
+    bottom: -50px;
+    font-size: 86px;
+    color: #171820;
+    -webkit-text-stroke: 2px white;
+    font-weight: 900;
+}
+
+
+.part-last-upcoming{
+    color: white;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.part-last-upcoming >h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #3A8E84, 2px 2px #3A8E84;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.part-last-upcoming >h2::after{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    border-bottom: 2px solid #3A8E84;
+    width: 100%;
+}
+
+.part-last-upcoming .all-last-upcoming{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: repeat(10, calc(100% / 10));
+    justify-items: center; */
+    width: 100%;
+}
+
+.part-last-upcoming .upcmoing-case{
+    width: 11%;
+    padding: 8px;
+    margin: 5px 0 ;
+    border: 2px solid white;
+    border-radius: 5px;
+    position: relative;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.part-last-upcoming .upcmoing-case:hover{
+    background-color: #fff;
+    color: #171820;
+    box-shadow: 5px 5px #3A8E84;
+    transition: .1s;
+    transform: translate(-4px,-4px);
+}
+
+.part-last-upcoming .upcmoing-case:hover .star-border{
+    background-color: #171820;
+}
+
+.part-last-upcoming .upcmoing-case:hover .star-border .star{
+    background-color: #fff;
+}
+
+.part-last-upcoming .upcmoing-case:hover .star-border .star-fill{
+    background-color: #171820;
+}
+
+.part-last-upcoming .upcmoing-case img{
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.part-last-upcoming .upcmoing-case h2{
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.part-last-upcoming .upcmoing-case .star{
+    font-size: 10px;
+}
+
+.part-last-upcoming .upcmoing-case .number-upcoming{
+    font-size: 18px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    font-weight: 900;
+    background-color: #fff;
+    color: #171820;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 4px;
+    padding: 0 7px;
+    border-top: 2px solid white;
+    text-align: center;
+}
