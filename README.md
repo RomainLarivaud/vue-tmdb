@@ -6,7 +6,7 @@ Ce projet a été réalisé dans le cadre de ma licence DDIM. Il avait pour but 
 
 ## Installation
 
-Pour lancer le projet, placez-vous dans le dossier où se trouver le projet, puis taper dans votre terminal :
+Pour lancer le projet, placez-vous dans le dossier où se trouve le projet, puis taper dans votre terminal :
 
 ```
 npm run serve
